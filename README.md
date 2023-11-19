@@ -9,9 +9,7 @@
   docker-compose up
   ```
   Note: it should take some minutes to download and build the docker images for the first time.
-- Step 4:
-  
-  Open the application with the URL http://localhost:13000/ on the browsers to see how it works.
+- Step 4: Open the application with the URL http://localhost:13000/ on the browsers to see how it works.
 
 **Time spent:** about 10 hours.
 
