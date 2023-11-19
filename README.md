@@ -6,6 +6,7 @@
 - Step 2: Download the source code from https://github.com/paultran0920/vouch-test/archive/refs/heads/main.zip then extract it
 - Step 3: go to the project root folder then run
   ```sh
+  cd local-test
   docker-compose up
   ```
   Note: it should take some minutes to download and build the docker images for the first time.
