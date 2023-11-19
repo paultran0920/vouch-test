@@ -15,7 +15,7 @@ export default function ChatMessageItem(props: ChatMessageItemProps) {
     if (!isOwner) {
       return (
         <Box>
-          {props.username}
+          {props.message.username}
         </Box>
       )
     }
