@@ -1,0 +1,37 @@
+version: '3.7'
+
+networks:
+  chat-demo:
+    ipam:
+      config:
+        - subnet: 172.8.0.0/24
+
+services:
+  mysql:
+    container_name: chat-database
+    image: mongo
+    restart: always
+    volumes:
+      - ./db_data:/data/db
+    ports:
+      - 27017:27017
+    networks:
+      - chat-demo
+
+  backend:
+    container_name: chat-backend
+    build:
+      context: ./../chat-backend
+    ports:
+      - 13001:3000
+    networks:
+      - chat-demo
+
+  frontend:
+    container_name: chat-frontend
+    build:
+      context: ./../chat-frontend
+    ports:
+      - 13000:3000
+    networks:
+      - chat-demo
