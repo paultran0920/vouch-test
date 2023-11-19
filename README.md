@@ -9,8 +9,18 @@
   cd local-test
   docker-compose up
   ```
-  Note: it should take some minutes to download and build the docker images for the first time.
+  Note: it should take some minutes to download and build the docker images for the first time. Please wait until you see this logs
+
+  <img width="994" alt="image" src="https://github.com/paultran0920/vouch-test/assets/111500186/fbf372d6-5856-4998-915d-e9cccfe8422d">
+
 - Step 4: Open the application with the URL http://localhost:13000/ on the browsers to see how it works.
+
+  It should be like this
+
+  <img width="644" alt="image" src="https://github.com/paultran0920/vouch-test/assets/111500186/646fbde8-4599-4ca8-bfb2-a318200aae27">
+
+  <img width="994" alt="image" src="https://github.com/paultran0920/vouch-test/assets/111500186/fd26869d-aa91-46f4-b6db-6556cc4151e7">
+
 
 **Time spent:** about 10 hours.
 
